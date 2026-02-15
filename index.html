@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(204, 139, 19);   /* Page background */
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            background-color: black;   /* Header background */
+            color: white;
+        }
+
+        .container {
+            border-color: black;
+            display: flex;
+            justify-content: space-between;
+            margin: 100px;
+            background-color: #ffffff;  /* Main card background */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .left {
+            display: flex;
+            gap: 25px;
+        }
+
+        .photo img {
+            width: 160px;
+            height: 200px;
+            border-radius: 8px;
+            border: 2px solid #2c3e50;
+            object-fit: cover;
+        }
+
+        .details p {
+            margin: 8px 0;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .details strong {
+            color: #2c3e50;
+        }
+
+        .links {
+            margin-top: 20px;
+        }
+
+        .links a {
+            display: block;
+            color: #1a73e8;
+            text-decoration: none;
+            margin: 6px 0;
+            font-weight: bold;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        .right table {
+            border-collapse: collapse;
+            width: 220px;
+            text-align: center;
+            background-color: #fdfefe;
+        }
+
+        .right th {
+            background-color: #1abc9c;  /* Table header color */
+            color: white;
+            padding: 10px;
+        }
+
+        .right td {
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+
+        .right tr:nth-child(even) {
+            background-color: #ecf9f6;  /* Alternate row color */
+        }
+
+        .gpa{
+            color:rgb(3, 255, 3);
+        }
+    </style>
+</head>
+<body>
+
+<h1>Student Profile</h1>
+
+<div class="container">
+
+    <!-- Left Section -->
+    <div class="left">
+        <div class="photo">
+            <img src="1771168789217.jpg.jpeg" alt="Student Photo">
+        </div>
+
+        <div class="details">
+            <p><strong>Name:</strong> Rakesh Kanna A</p>
+            <p><strong>Class:</strong> B.E - ECE</p>
+            <p><strong>Register Number:</strong> 711523BEC086</p>
+            <p><strong>Batch:</strong> 2023 – 2027</p>
+
+            <div class="links">
+                <a href="InShot_20260215_205257462.mp4">Introduction Video</a>
+                <a href="Resume_Rakesh.pdf">Resume</a>
+                
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right">
+        <table>
+            <tr>
+                <th>Semester</th>
+                <th>CGPA</th>
+            </tr>
+            <tr>
+                <td>Sem 1</td>
+                <td class="gpa">7.74</td>
+            </tr>
+            <tr>
+                <td>Sem 2</td>
+                <td class="gpa">8.00</td>
+            </tr>
+            <tr>
+                <td>Sem 3</td>
+                <td class="gpa">8.23</td>
+            </tr>
+            <tr>
+                <td>Sem 4</td>
+                <td class="gpa">7.72</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+</body>
+</html>
